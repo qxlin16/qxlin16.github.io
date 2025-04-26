@@ -93,24 +93,25 @@
     overflow: auto;
     position: sticky;
     text-align: center;
-    top: 10vh;
+    top: 20vh;
     width: 250px;
 }
 #home-card #card-div {
     overflow: auto;
     padding: 25px 0;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 #home-card #card-div .avatar {
-    border: #6ba6ff solid 1.5px;
-    border-radius: 50%;
+    border: #27272700 solid 0px;
+    border-radius: 20%;
     margin: auto;
     text-align: center;
     height: 130px;
     width: 130px;
+    box-shadow: 2px 2px 10px 0 #bbbdff7f;
 }
 #home-card #card-div .avatar img {
-    border-radius: 50%;
+    border-radius: 20%;
     height: 100%;
     width: 100%;
 }
@@ -168,20 +169,21 @@
 }
 #home-head {
     display: flex;
-    height: 100vh;
+    height: 40vh;
     width: 100vw;
 }
 #home-head #home-background {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 45vh;
     left: 0;
     position: absolute;
     top: 0;
     width: 100vw;
     z-index: -1;
 }
+
 #home-head #home-info .info {
     align-items: center;
     border-radius: 50%;
@@ -332,6 +334,10 @@
     display: flex;
     margin: auto;
     padding: 20px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
 }
 #home-posts-wrap,
 #archives,
@@ -438,7 +444,7 @@
     top: -50px;
 }
 #menu.menu-color {
-    background: #0003;
+    background: rgba(18, 10, 48, 0.534);
 }
 #menu.menu-color #desktop-menu a,
 #menu.menu-color #mobile-menu a,
@@ -731,7 +737,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: #1e3e3f;
+    color: #1e353f;
     font-weight: bold;
     margin: 15px 0;
     word-break: keep-all;
@@ -775,7 +781,7 @@ p,
 ul,
 ol {
     line-height: 2;
-    margin: 15px 0;
+    margin: 15px 0px;
     text-align: justify;
 }
 pre {
@@ -865,14 +871,14 @@ ol li {
     }
     #home-head #home-info .loop {
         display: inline-block;
-        height: 500px;
+        height: 450px;
         position: absolute;
-        width: 500px;
+        width: 450px;
     }
     #home-head #home-info,
     #home-head #home-info .info {
-        height: 500px;
-        width: 500px;
+        height: 450px;
+        width: 450px;
     }
     #home-posts {
         margin-right: 50px;

@@ -96,9 +96,9 @@
 }
 
 .split-line {
-    background-color: #6ba6ff; 
+    background-color: #cecece; 
     height: 1.5px;
-    margin-top: 20px;
+    margin-bottom: 20px;
     border: none; /* This removes the default border */
 }
 
@@ -107,3 +107,8 @@
     font-style: italic;
     color: #6ba6ff;
   }
+  ul + h3 + .split-line {
+    height: 1px; /* Match the height of your other horizontal lines */
+    margin: 1rem 0; /* Match the margins of your other horizontal lines */
+  }
+
