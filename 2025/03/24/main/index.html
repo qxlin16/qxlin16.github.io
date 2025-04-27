@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Research | Qixuan Lin</title>
+    <title>About Me | Qixuan Lin</title>
     <meta name="author" content="Qixuan Lin" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -67,17 +67,26 @@
             <span>QIXUAN LIN</span>
         </a>
         
-        <a href="/research">
+        
+        <a href="/#post-main">
+            <i class="fa-solid fa- fa-fw"></i>
+            <span>&ensp;About Me</span>
+        </a>
+        
+        
+        <a href="/#post-research">
             <i class="fa-solid fa- fa-fw"></i>
             <span>&ensp;Research</span>
         </a>
         
-        <a href="/publications">
+        
+        <a href="/#post-publications">
             <i class="fa-solid fa- fa-fw"></i>
             <span>&ensp;Publications</span>
         </a>
         
-        <a href="/gallery">
+        
+        <a href="/#post-gallery">
             <i class="fa-solid fa- fa-fw"></i>
             <span>&ensp;Gallery</span>
         </a>
@@ -91,7 +100,18 @@
         <transition name="slide">
             <div class="items" v-show="showMenuItems">
                 
-                <a href="/research">
+                
+                <a href="/#post-main">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa- fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">About Me</div>
+                    </div>
+                </a>
+                
+                
+                <a href="/#post-research">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa- fa-fw"></i>
@@ -100,7 +120,8 @@
                     </div>
                 </a>
                 
-                <a href="/publications">
+                
+                <a href="/#post-publications">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa- fa-fw"></i>
@@ -109,7 +130,8 @@
                     </div>
                 </a>
                 
-                <a href="/gallery">
+                
+                <a href="/#post-gallery">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa- fa-fw"></i>
@@ -125,11 +147,10 @@
 <transition name="fade">
     <div id="menu-curtain" @click="showMenuItems = !showMenuItems" v-show="showMenuItems"></div>
 </transition>
-
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
             <div class="article">
     <div>
-        <h1>Research</h1>
+        <h1>About Me</h1>
     </div>
     <div class="info">
         <!-- <span class="date">
@@ -143,7 +164,14 @@
     </div>
     
     <div class="content" v-pre>
-        <h2 id="Coming-soon"><a href="#Coming-soon" class="headerlink" title="Coming soon"></a>Coming soon</h2>
+        <h3 id="About-Me"><a href="#About-Me" class="headerlink" title="About Me"></a>About Me</h3><hr class="split-line">
+
+<p>Hello! I am Qixuan, a Ph.D. candidate in the Department of Electrical and Computer Engineering at the University of Washington, working in <a target="_blank" rel="noopener" href="https://light.ece.uw.edu/">Prof. Mo Li’s lab</a>. My research focuses on developing a novel solid-state beam steering technology – acousto-optic beam steering (AOBS) –  to address long-standing challenges in optical beam steering and control that underpin many advanced optical technologies. </p>
+<p> AOBS is based on Brillouin scattering, where traveling acoustic waves form dynamic gratings that scatter light from a photonic chip into free space. This technology enables novel capibilities, such as frequency-angular resolving (FAR) LiDAR, where a beam’s steering angle is intrinsically encoded in its optical frequency, allowing 3D imaging in the frequency domain. Additionally, multi-tone acoustic waves can co-propagate within a single beam steering channel. By integrating an array of such channels, the system can readily scale to simultaneous steer hundreds of individully controlable beams from a compact chip.  </p>
+<p> Our work has been published in <a target="_blank" rel="noopener" href="https://www.nature.com/articles/s41586-023-06201-6"><em>Nature</em></a> and accepted by <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2403.05649"><em>Nature Communications</em></a>, with more exciting developments coming soon – stay tuned!</p>
+<p> We are also exploring the co-integration of acousto-optic devices with other nonlinear optical effects – such as electro-optic and Kerr frequency comb – to unlock new possibilities and expand application frontiers.
+ </p>
+
     </div>
     
     

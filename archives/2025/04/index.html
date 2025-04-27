@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>About Me | Qixuan Lin</title>
+    <title>Archives | Qixuan Lin</title>
     <meta name="author" content="Qixuan Lin" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -43,10 +43,6 @@
 
 
 
-
-
-
-
 <link rel="stylesheet" href="/css/main.css" />
 
 <meta name="generator" content="Hexo 7.3.0"></head>
@@ -67,17 +63,26 @@
             <span>QIXUAN LIN</span>
         </a>
         
-        <a href="/research">
+        
+        <a href="/#post-main">
+            <i class="fa-solid fa- fa-fw"></i>
+            <span>&ensp;About Me</span>
+        </a>
+        
+        
+        <a href="/#post-research">
             <i class="fa-solid fa- fa-fw"></i>
             <span>&ensp;Research</span>
         </a>
         
-        <a href="/publications">
+        
+        <a href="/#post-publications">
             <i class="fa-solid fa- fa-fw"></i>
             <span>&ensp;Publications</span>
         </a>
         
-        <a href="/gallery">
+        
+        <a href="/#post-gallery">
             <i class="fa-solid fa- fa-fw"></i>
             <span>&ensp;Gallery</span>
         </a>
@@ -91,7 +96,18 @@
         <transition name="slide">
             <div class="items" v-show="showMenuItems">
                 
-                <a href="/research">
+                
+                <a href="/#post-main">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa- fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">About Me</div>
+                    </div>
+                </a>
+                
+                
+                <a href="/#post-research">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa- fa-fw"></i>
@@ -100,7 +116,8 @@
                     </div>
                 </a>
                 
-                <a href="/publications">
+                
+                <a href="/#post-publications">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa- fa-fw"></i>
@@ -109,7 +126,8 @@
                     </div>
                 </a>
                 
-                <a href="/gallery">
+                
+                <a href="/#post-gallery">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa- fa-fw"></i>
@@ -125,47 +143,69 @@
 <transition name="fade">
     <div id="menu-curtain" @click="showMenuItems = !showMenuItems" v-show="showMenuItems"></div>
 </transition>
-
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            <div class="article">
-    <div>
-        <h1>About Me</h1>
-    </div>
-    <div class="info">
-        <!-- <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2025/3/25
-        </span> -->
+            
+<div id="archives">
+    
+    <div id="timeline-wrap" ref="timeline">
         
+        <div class="timeline" data-title="gallery">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2025/3/24</div>
+                <a href="/2025/03/24/gallery/">
+                    <h3>Gallery</h3>
+                </a>
+                <div class="info">
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline" data-title="aboutme">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2025/3/24</div>
+                <a href="/2025/03/24/main/">
+                    <h3>About Me</h3>
+                </a>
+                <div class="info">
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline" data-title="publications">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2025/4/27</div>
+                <a href="/2025/04/27/publications/">
+                    <h3>Publications</h3>
+                </a>
+                <div class="info">
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline" data-title="research">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2025/4/27</div>
+                <a href="/2025/04/27/research/">
+                    <h3>Research</h3>
+                </a>
+                <div class="info">
+                    
+                    
+                </div>
+            </div>
+        </div>
         
     </div>
-    
-    <div class="content" v-pre>
-        <h2 id="Education"><a href="#Education" class="headerlink" title="Education"></a>Education</h2><ul>
-<li>Ph.D. in Electrical and Computer Engineering, University of Washington, 2020 - Present<ul>
-<li>2021– 2023 Accelerating Quantum-Enabled Technologies (AQET) scholar</li>
-<li>2022 Autumn CoMotion Innovation Gap Fund Awards</li>
-<li>2020 Autumn PaulC.Leach Fellowship</li>
-</ul>
-</li>
-<li>B.S. in Physics, University of Science and Technology of China, 2016 - 2020</li>
-</ul>
-<h2 id="Research-Interests"><a href="#Research-Interests" class="headerlink" title="Research Interests"></a>Research Interests</h2><ul>
-<li>Integrated photonics</li>
-<li>Integrated Acousto-optics and Optomechanics</li>
-<li>Thin-film lithium niobate (TFLN) devices</li>
-</ul>
-
-    </div>
-    
-    
-    
-    
-    
-    
-    
 </div>
 
             <footer id="footer">
@@ -197,12 +237,6 @@
         
     </div>
     <script src="/js/main.js"></script>
-    
-    
-
-
-
-
     
 </body>
 </html>

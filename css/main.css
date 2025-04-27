@@ -85,13 +85,13 @@
     background: #ffffff00;
     border: none;
     border-radius: 10px;
-    /* box-shadow: 0 0 20px #d9d9d980; */
+    box-shadow: 0 0 20px #d9d9d900;
     display: flex;
     flex-direction: column;
     max-height: 100vh;
     justify-content: center;
     overflow: auto;
-    position: sticky;
+    position: fixed;
     text-align: center;
     top: 20vh;
     width: 250px;
@@ -99,7 +99,7 @@
 #home-card #card-div {
     overflow: auto;
     padding: 25px 0;
-    margin-top: 80px;
+    margin-top: 20px;
 }
 #home-card #card-div .avatar {
     border: #27272700 solid 0px;
@@ -169,19 +169,20 @@
 }
 #home-head {
     display: flex;
-    height: 40vh;
+    height: 10vh;
     width: 100vw;
 }
 #home-head #home-background {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 45vh;
+    height: 100vh;
     left: 0;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100vw;
     z-index: -1;
+    opacity: 0.1;
 }
 
 #home-head #home-info .info {
@@ -190,34 +191,6 @@
     display: flex;
     justify-content: center;
     text-align: center;
-}
-#home-head #home-info .loop:nth-child(1) {
-    animation: loop1 10s linear infinite;
-    background: #fff;
-    border-radius: 38% 62% 63% 37%/41% 44% 56% 59%;
-    opacity: 0.3;
-    transform: rotate(30deg);
-}
-#home-head #home-info .loop:nth-child(2) {
-    animation: loop2 15s linear infinite;
-    background: #fff;
-    border-radius: 38% 62% 63% 37%/41% 44% 56% 59%;
-    opacity: 0.45;
-    transform: rotate(60deg);
-}
-#home-head #home-info .loop:nth-child(3) {
-    animation: loop3 10s linear infinite;
-    background: #fff;
-    border-radius: 38% 62% 63% 37%/41% 44% 56% 59%;
-    opacity: 0.3;
-    transform: rotate(90deg);
-}
-#home-head #home-info .loop:nth-child(4) {
-    animation: loop4 15s linear infinite;
-    background: #fff;
-    border-radius: 38% 62% 63% 37%/41% 44% 56% 59%;
-    opacity: 0.45;
-    transform: rotate(120deg);
 }
 #home-head #home-info,
 #home-posts {
@@ -256,10 +229,10 @@
     color: #999;
 }
 #home-posts .post {
-    background: #ffffff00;
-    border-radius: 20px;
-    /* box-shadow: 0 0 20px #d9d9d980;
-    transition: box-shadow 0.25s, transform 0.25s; */
+    background: #ffffffce;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #d9d9d980;
+    transition: box-shadow 0.25s, transform 0.25s;
     overflow: hidden;
 }
 #home-posts .post .category-and-date {
@@ -398,7 +371,7 @@
     height: 50px;
 }
 #menu #desktop-menu .title {
-    color: #343434;
+    color: #282828;
     display: inline-block;
     margin-left: 60px;
     margin-right: 5px;
@@ -432,7 +405,7 @@
     z-index: 1003;
 }
 #menu-curtain {
-    background: #0003;
+    background: rgb(0, 0, 0);
     height: 100%;
     left: 0;
     position: fixed;
@@ -440,17 +413,26 @@
     width: 100%;
     z-index: 1001;
 }
-#menu.hidden {
+/* #menu.hidden {
     top: -50px;
-}
+} */
+/*change menu color*/
 #menu.menu-color {
-    background: rgba(18, 10, 48, 0.534);
+    background: rgb(39, 39, 39);
 }
 #menu.menu-color #desktop-menu a,
 #menu.menu-color #mobile-menu a,
 #menu.menu-color #mobile-menu .title {
     color: #fff;
 }
+/*menu transision*/
+html {
+    scroll-behavior: smooth;
+  }
+  
+#home-posts .post {
+    scroll-margin-top: 70px; /* Your menu height + padding */
+  }
 #preview {
     align-items: center;
     background-color: #fffc;
@@ -886,10 +868,10 @@ ol li {
     }
     #home-posts .post {
         margin-bottom: 25px;
-        padding: 50px;
+        padding: 20px 50px;
     }
     #home-posts .post .description {
-        padding: 20px 0;
+        padding: 0px 0;
     }
     #home-posts-wrap {
         max-width: 1200px;

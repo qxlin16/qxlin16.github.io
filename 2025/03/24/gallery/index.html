@@ -67,17 +67,26 @@
             <span>QIXUAN LIN</span>
         </a>
         
-        <a href="/research">
+        
+        <a href="/#post-main">
+            <i class="fa-solid fa- fa-fw"></i>
+            <span>&ensp;About Me</span>
+        </a>
+        
+        
+        <a href="/#post-research">
             <i class="fa-solid fa- fa-fw"></i>
             <span>&ensp;Research</span>
         </a>
         
-        <a href="/publications">
+        
+        <a href="/#post-publications">
             <i class="fa-solid fa- fa-fw"></i>
             <span>&ensp;Publications</span>
         </a>
         
-        <a href="/gallery">
+        
+        <a href="/#post-gallery">
             <i class="fa-solid fa- fa-fw"></i>
             <span>&ensp;Gallery</span>
         </a>
@@ -91,7 +100,18 @@
         <transition name="slide">
             <div class="items" v-show="showMenuItems">
                 
-                <a href="/research">
+                
+                <a href="/#post-main">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa- fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">About Me</div>
+                    </div>
+                </a>
+                
+                
+                <a href="/#post-research">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa- fa-fw"></i>
@@ -100,7 +120,8 @@
                     </div>
                 </a>
                 
-                <a href="/publications">
+                
+                <a href="/#post-publications">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa- fa-fw"></i>
@@ -109,7 +130,8 @@
                     </div>
                 </a>
                 
-                <a href="/gallery">
+                
+                <a href="/#post-gallery">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa- fa-fw"></i>
@@ -125,7 +147,6 @@
 <transition name="fade">
     <div id="menu-curtain" @click="showMenuItems = !showMenuItems" v-show="showMenuItems"></div>
 </transition>
-
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
             <div class="article">
     <div>
@@ -136,14 +157,16 @@
             <span class="icon">
                 <i class="fa-solid fa-calendar fa-fw"></i>
             </span>
-            2025/4/26
+            2025/3/24
         </span> -->
         
         
     </div>
     
     <div class="content" v-pre>
-        <div class="gallery-grid">
+        <h3 id="Gallery"><a href="#Gallery" class="headerlink" title="Gallery"></a>Gallery</h3><hr class="split-line">
+
+<div class="gallery-grid">
   <div class="gallery-item">
     <div class="img-container">
       <img src="/images/aobs_chip.png" alt="AOBS" onclick="openLightbox(this.src)">
@@ -206,7 +229,9 @@
 
 </div>
 
-<h2 id="Beyond-the-Lab"><a href="#Beyond-the-Lab" class="headerlink" title="Beyond the Lab"></a>Beyond the Lab</h2><div class="gallery-grid">
+<h2 id="Beyond-the-Lab"><a href="#Beyond-the-Lab" class="headerlink" title="Beyond the Lab"></a>Beyond the Lab</h2><hr class="split-line">
+
+<div class="gallery-grid">
   <div class="gallery-item">
     <div class="img-container">
       <img src="/images/sakura.jpg" alt="Cherry Blossom at UW" onclick="openLightbox(this.src)">

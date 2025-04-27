@@ -63,17 +63,26 @@
             <span>QIXUAN LIN</span>
         </a>
         
-        <a href="/research">
+        
+        <a href="/#post-main">
+            <i class="fa-solid fa- fa-fw"></i>
+            <span>&ensp;About Me</span>
+        </a>
+        
+        
+        <a href="/#post-research">
             <i class="fa-solid fa- fa-fw"></i>
             <span>&ensp;Research</span>
         </a>
         
-        <a href="/publications">
+        
+        <a href="/#post-publications">
             <i class="fa-solid fa- fa-fw"></i>
             <span>&ensp;Publications</span>
         </a>
         
-        <a href="/gallery">
+        
+        <a href="/#post-gallery">
             <i class="fa-solid fa- fa-fw"></i>
             <span>&ensp;Gallery</span>
         </a>
@@ -87,7 +96,18 @@
         <transition name="slide">
             <div class="items" v-show="showMenuItems">
                 
-                <a href="/research">
+                
+                <a href="/#post-main">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa- fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">About Me</div>
+                    </div>
+                </a>
+                
+                
+                <a href="/#post-research">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa- fa-fw"></i>
@@ -96,7 +116,8 @@
                     </div>
                 </a>
                 
-                <a href="/publications">
+                
+                <a href="/#post-publications">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa- fa-fw"></i>
@@ -105,7 +126,8 @@
                     </div>
                 </a>
                 
-                <a href="/gallery">
+                
+                <a href="/#post-gallery">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa- fa-fw"></i>
@@ -121,19 +143,60 @@
 <transition name="fade">
     <div id="menu-curtain" @click="showMenuItems = !showMenuItems" v-show="showMenuItems"></div>
 </transition>
-
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
             
 <div id="archives">
     
     <div id="timeline-wrap" ref="timeline">
         
-        <div class="timeline" data-title="">
+        <div class="timeline" data-title="gallery">
             <div class="timeline-tail"></div>
             <div class="timeline-content">
                 <div class="item-time">2025/3/24</div>
-                <a href="/2025/03/24/index/">
-                    <h3></h3>
+                <a href="/2025/03/24/gallery/">
+                    <h3>Gallery</h3>
+                </a>
+                <div class="info">
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline" data-title="aboutme">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2025/3/24</div>
+                <a href="/2025/03/24/main/">
+                    <h3>About Me</h3>
+                </a>
+                <div class="info">
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline" data-title="publications">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2025/4/27</div>
+                <a href="/2025/04/27/publications/">
+                    <h3>Publications</h3>
+                </a>
+                <div class="info">
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline" data-title="research">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2025/4/27</div>
+                <a href="/2025/04/27/research/">
+                    <h3>Research</h3>
                 </a>
                 <div class="info">
                     

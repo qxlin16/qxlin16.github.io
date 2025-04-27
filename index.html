@@ -65,17 +65,26 @@
             <span>QIXUAN LIN</span>
         </a>
         
-        <a href="/research">
+        
+        <a href="/#post-main">
+            <i class="fa-solid fa- fa-fw"></i>
+            <span>&ensp;About Me</span>
+        </a>
+        
+        
+        <a href="/#post-research">
             <i class="fa-solid fa- fa-fw"></i>
             <span>&ensp;Research</span>
         </a>
         
-        <a href="/publications">
+        
+        <a href="/#post-publications">
             <i class="fa-solid fa- fa-fw"></i>
             <span>&ensp;Publications</span>
         </a>
         
-        <a href="/gallery">
+        
+        <a href="/#post-gallery">
             <i class="fa-solid fa- fa-fw"></i>
             <span>&ensp;Gallery</span>
         </a>
@@ -89,7 +98,18 @@
         <transition name="slide">
             <div class="items" v-show="showMenuItems">
                 
-                <a href="/research">
+                
+                <a href="/#post-main">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa- fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">About Me</div>
+                    </div>
+                </a>
+                
+                
+                <a href="/#post-research">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa- fa-fw"></i>
@@ -98,7 +118,8 @@
                     </div>
                 </a>
                 
-                <a href="/publications">
+                
+                <a href="/#post-publications">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa- fa-fw"></i>
@@ -107,7 +128,8 @@
                     </div>
                 </a>
                 
-                <a href="/gallery">
+                
+                <a href="/#post-gallery">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa- fa-fw"></i>
@@ -123,13 +145,12 @@
 <transition name="fade">
     <div id="menu-curtain" @click="showMenuItems = !showMenuItems" v-show="showMenuItems"></div>
 </transition>
-
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
             <div id="home-head">
     <div
         id="home-background"
         ref="homeBackground"
-        data-images="/images/background.png"
+        data-images="/images/background2.jpg"
     ></div>
     <!-- <div id="home-info" @click="homeClick">
         <span class="loop"></span>
@@ -153,29 +174,62 @@
     <div id="home-posts">
         
 
-<div class="post">
-    <a href="/2025/03/24/index/">
-        <h2 class="post-title"></h2>
-    </a>
-    <!-- <div class="category-and-date">
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2025/3/24
-        </span>
-        
-        
-    </div> -->
-    <div class="description">
-        <div class="content">
+    <div class="post" id="post-main">
+        <!-- <a href="/2025/03/24/main/">
+            <h2 class="post-title">About Me</h2>
+        </a> -->
+        <!-- <div class="category-and-date">
             
-            <p>Hello! I am Qixuan, a Ph.D. candidate in the Department of Electrical and Computer Engineering at the University of Washington, working in <a target="_blank" rel="noopener" href="https://light.ece.uw.edu/">Prof. Mo Li’s lab</a>. My research focuses on developing a novel solid-state beam steering technology – acousto-optic beam steering (AOBS) –  to address long-standing challenges in optical beam steering and control that underpin many advanced optical technologies. </p>
+            <span class="date">
+                <span class="icon">
+                    <i class="fa-solid fa-calendar fa-fw"></i>
+                </span>
+                2025/3/24
+            </span>
+            
+            
+        </div> -->
+        <div class="description">
+            <div class="content" v-pre>
+                
+                <h3 id="About-Me"><a href="#About-Me" class="headerlink" title="About Me"></a>About Me</h3><hr class="split-line">
+
+<p>Hello! I am Qixuan, a Ph.D. candidate in the Department of Electrical and Computer Engineering at the University of Washington, working in <a target="_blank" rel="noopener" href="https://light.ece.uw.edu/">Prof. Mo Li’s lab</a>. My research focuses on developing a novel solid-state beam steering technology – acousto-optic beam steering (AOBS) –  to address long-standing challenges in optical beam steering and control that underpin many advanced optical technologies. </p>
 <p> AOBS is based on Brillouin scattering, where traveling acoustic waves form dynamic gratings that scatter light from a photonic chip into free space. This technology enables novel capibilities, such as frequency-angular resolving (FAR) LiDAR, where a beam’s steering angle is intrinsically encoded in its optical frequency, allowing 3D imaging in the frequency domain. Additionally, multi-tone acoustic waves can co-propagate within a single beam steering channel. By integrating an array of such channels, the system can readily scale to simultaneous steer hundreds of individully controlable beams from a compact chip.  </p>
 <p> Our work has been published in <a target="_blank" rel="noopener" href="https://www.nature.com/articles/s41586-023-06201-6"><em>Nature</em></a> and accepted by <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2403.05649"><em>Nature Communications</em></a>, with more exciting developments coming soon – stay tuned!</p>
-<p> We are also exploring the co-integration of acousto-optic devices with other nonlinear optical effects – such as electro-optic and Kerr frequency comb – to unlock new possibilities and expand application frontiers.<br>&nbsp;</p>
-<h3 id="🔥-Research-Interests"><a href="#🔥-Research-Interests" class="headerlink" title="🔥 Research Interests"></a>🔥 Research Interests</h3><hr class="split-line">
+<p> We are also exploring the co-integration of acousto-optic devices with other nonlinear optical effects – such as electro-optic and Kerr frequency comb – to unlock new possibilities and expand application frontiers.
+ </p>
+
+                
+            </div>
+        </div>
+        <div class="post-tags">
+            
+            
+            
+        </div>
+        <!-- <a href="/2025/03/24/main/" class="go-post">Read More</a> -->
+    </div>
+
+    <div class="post" id="post-research">
+        <!-- <a href="/2025/04/27/research/">
+            <h2 class="post-title">Research</h2>
+        </a> -->
+        <!-- <div class="category-and-date">
+            
+            <span class="date">
+                <span class="icon">
+                    <i class="fa-solid fa-calendar fa-fw"></i>
+                </span>
+                2025/4/27
+            </span>
+            
+            
+        </div> -->
+        <div class="description">
+            <div class="content" v-pre>
+                
+                <h3 id="🔥-Research-Interests"><a href="#🔥-Research-Interests" class="headerlink" title="🔥 Research Interests"></a>🔥 Research Interests</h3><hr class="split-line">
 
 <p>▪️Integrated photonics and optomechanics </p>
 <p>▪️Nonlinear optics </p>
@@ -187,17 +241,237 @@
 
 <p>I will be presenting our work “Multi-beam Steering and Modulation using Integrated Acousto-optics Arrays” at <em>CLEO 2025</em> Long Beach.<br><span class="date-format">Time: 1:45 PM to 2:00 PM PDT, May 5, 2025</span></p>
 
+                
+            </div>
+        </div>
+        <div class="post-tags">
+            
+            
             
         </div>
+        <!-- <a href="/2025/04/27/research/" class="go-post">Read More</a> -->
     </div>
-    <div class="post-tags">
-        
-        
-        
+
+    <div class="post" id="post-publications">
+        <!-- <a href="/2025/04/27/publications/">
+            <h2 class="post-title">Publications</h2>
+        </a> -->
+        <!-- <div class="category-and-date">
+            
+            <span class="date">
+                <span class="icon">
+                    <i class="fa-solid fa-calendar fa-fw"></i>
+                </span>
+                2025/4/27
+            </span>
+            
+            
+        </div> -->
+        <div class="description">
+            <div class="content" v-pre>
+                
+                <!-- # Publications -->
+<h3 id="Publications"><a href="#Publications" class="headerlink" title="Publications"></a>Publications</h3><hr class="split-line">
+
+<p><em>Note: An asterisk (*) denotes equal contribution</em></p>
+<h4 id="2025"><a href="#2025" class="headerlink" title="2025"></a>2025</h4><p><span class="author-name">Qixuan Lin</span>, Shucheng Fang, Yue Yu, Zichen Xi, Linbo Shao, Bingzhao Li, and Mo Li, “Optical multi-beam steering and communication using integrated acousto-optics arrays,” <strong><em>Nature Communications</em></strong>, accepted <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2403.05649">[link]</a></p>
+<p>I-Tung Chen, Nicholas S. Yama, Haoqin Deng, <span class="author-name">Qixuan Lin</span>, Yue Yu, Abhi Saxena, Arka Majumdar, Kai-Mei C. Fu, Mo Li, “Intermodal microwave-to-optical transduction using silicon-on-sapphire optomechanical ring resonator,” submitted (2025)</p>
+<p>Marziyeh Rezaei, Liban Hussein, Alana Dee, Shucheng Fang, <span class="author-name">Qixuan Lin</span>, Mo Li, and Sajjad Moazeni. “Secure FMCW LiDAR Ranging with an Electro-Optical Synthesizer at 5000 Measurements&#x2F;s.” <strong><em>IEEE Solid-State Circuits Letters</em></strong> (2025) <a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/abstract/document/10944799">[link]</a></p>
+<h4 id="2023"><a href="#2023" class="headerlink" title="2023"></a>2023</h4><p>Bingzhao Li*, <span class="author-name">Qixuan Lin</span>*, and Mo Li, “Frequency-Angular Resolving LiDAR using Chip-scale Acousto-optic Beam Steering”, <strong><em>Nature 620</em></strong>, 316 (2023) <a target="_blank" rel="noopener" href="https://www.nature.com/articles/s41586-023-06201-6">[link]</a></p>
+<p>&nbsp;</p>
+<h3 id="Conference-Presentations"><a href="#Conference-Presentations" class="headerlink" title="Conference Presentations"></a>Conference Presentations</h3><hr class="split-line">
+
+<h4 id="2023-1"><a href="#2023-1" class="headerlink" title="2023"></a>2023</h4><p>Sarah Edwards, <span class="author-name">Qixuan Lin</span>, Morgan Sherer, Elliott Rosenberg, Jiun-Haw Chu, and, Arthur Barnard, ”Mod<br>ifying Crystal Symmetries via Shear Distortion,” <strong><em>2023 IEEE International Conference on Quantum Com<br>puting and Engineering (QCE)</em></strong>, Bellevue, Washington, USA, 2023</p>
+<p><span class="author-name">Qixuan Lin</span>, Bingzhao Li, Shucheng Fang, and Mo Li, ”Visible light multichannel on-chip acousto-optic<br> beam steering” <strong><em>Frontiers in Optics</em></strong>, FTu6E. 3, Tacoma, Washington, USA, 2023</p>
+<p><span class="author-name">Qixuan Lin</span>, Bingzhao Li, and Mo Li, ”Scalable Optical Control for Atomic System using Integrated<br> Acousto-Optic Beam Steering,” <strong><em>CLEO</em></strong>, SM4P.6, San Jose, California, USA, 2023</p>
+
+                
+            </div>
+        </div>
+        <div class="post-tags">
+            
+            
+            
+        </div>
+        <!-- <a href="/2025/04/27/publications/" class="go-post">Read More</a> -->
     </div>
-    <!-- <a href="/2025/03/24/index/" class="go-post">Read More</a> -->
+
+    <div class="post" id="post-gallery">
+        <!-- <a href="/2025/03/24/gallery/">
+            <h2 class="post-title">Gallery</h2>
+        </a> -->
+        <!-- <div class="category-and-date">
+            
+            <span class="date">
+                <span class="icon">
+                    <i class="fa-solid fa-calendar fa-fw"></i>
+                </span>
+                2025/3/24
+            </span>
+            
+            
+        </div> -->
+        <div class="description">
+            <div class="content" v-pre>
+                
+                <h3 id="Gallery"><a href="#Gallery" class="headerlink" title="Gallery"></a>Gallery</h3><hr class="split-line">
+
+<div class="gallery-grid">
+  <div class="gallery-item">
+    <div class="img-container">
+      <img src="/images/aobs_chip.png" alt="AOBS" onclick="openLightbox(this.src)">
+    </div>
+    <div class="caption">
+      <div class="description">AOBS -- linking photonic chip to free-space</div>
+      <div class="credit">by AOBS team (2025)</div>
+    </div>
+  </div>
+  
+  <div class="gallery-item">
+    <div class="img-container">
+      <img src="/images/revolving_mario_round_marker.gif" alt="Revolving Mario Round Marker" onclick="openLightbox(this.src)">
+    </div>
+    <div class="caption">
+      <div class="description">3D Mario imaged in frequency domain</div>
+      <div class="credit">by Shucheng Fang (2024)</div>
+    </div>
+  </div>
+  
+  <div class="gallery-item">
+    <div class="img-container">
+      <img src="/images/lnoi_ring_03.png" alt="Ring-enhanced AOBS" onclick="openLightbox(this.src)">
+    </div>
+    <div class="caption">
+      <div class="description">Ring-enhanced AOBS with an integrated electro-optic modulator</div>
+      <div class="credit">by Yue Yu (2025)</div>
+    </div>
+  </div>
+
+  <div class="gallery-item">
+    <div class="img-container">
+      <img src="/images/rlnbs03.png" alt="Acousto-optic waveguide" onclick="openLightbox(this.src)">
+    </div>
+    <div class="caption">
+      <div class="description">Integrated phoxonic circuit</div>
+      <div class="credit">by Qixuan Lin (2025)</div>
+    </div>
+  </div>
+  
+  <div class="gallery-item">
+    <div class="img-container">
+      <img src="/images/rlnbs04.png" alt="Phononic waveguides" onclick="openLightbox(this.src)">
+    </div>
+    <div class="caption">
+      <div class="description">Phononic waveguides</div>
+      <div class="credit">by Qixuan Lin (2025)</div>
+    </div>
+  </div>
+  
+  <div class="gallery-item">
+    <div class="img-container">
+      <img src="/images/AL01 POST CPD1.jpg" alt="1mm free-standing LN membrane" onclick="openLightbox(this.src)">
+    </div>
+    <div class="caption">
+      <div class="description">1mm free-standing LN membrane</div>
+      <div class="credit">by Qixuan Lin (2025)</div>
+    </div>
+  </div>
+
 </div>
 
+<h2 id="Beyond-the-Lab"><a href="#Beyond-the-Lab" class="headerlink" title="Beyond the Lab"></a>Beyond the Lab</h2><hr class="split-line">
+
+<div class="gallery-grid">
+  <div class="gallery-item">
+    <div class="img-container">
+      <img src="/images/sakura.jpg" alt="Cherry Blossom at UW" onclick="openLightbox(this.src)">
+    </div>
+    <div class="caption">
+      <div class="description">Cherry Blossom at UW</div>
+      <div class="credit">by Qixuan Lin (2025)</div>
+    </div>
+  </div>
+
+  <div class="gallery-item">
+    <div class="img-container">
+      <img src="/images/aurora.jpg" alt="Aurora at Alaska" onclick="openLightbox(this.src)">
+    </div>
+    <div class="caption">
+      <div class="description">Aurora at Alaska</div>
+      <div class="credit">by Qixuan Lin (2025)</div>
+    </div>
+  </div>
+
+  <div class="gallery-item">
+    <div class="img-container">
+      <img src="/images/aurora2.jpg" alt="Aurora at Alaska COE" onclick="openLightbox(this.src)">
+    </div>
+    <div class="caption">
+      <div class="description">267K is cold. We are cool!</div>
+      <div class="credit">by Qixuan Lin (2025)</div>
+    </div>
+  </div>
+
+  <div class="gallery-item">
+    <div class="img-container">
+      <img src="/images/glacier2.jpg" alt="Matanuska glacier" onclick="openLightbox(this.src)">
+    </div>
+    <div class="caption">
+      <div class="description">Matanuska glacier</div>
+      <div class="credit">by Tongyan Wang (2025)</div>
+    </div>
+  </div>
+  
+  <div class="gallery-item">
+    <div class="img-container">
+      <img src="/images/spie.jpg" alt="spie" onclick="openLightbox(this.src)">
+    </div>
+    <div class="caption">
+      <div class="description">"Never trust an atom. They make up everything!"</div>
+      <div class="credit">by Qixuan Lin (2025)</div>
+    </div>
+  </div>
+
+  <div class="gallery-item">
+    <div class="img-container">
+      <img src="/images/granite.jpg" alt="Granite mountain" onclick="openLightbox(this.src)">
+    </div>
+    <div class="caption">
+      <div class="description">Granite Mountain: a tough last mile to a clear view</div>
+      <div class="credit">by Qixuan Lin (2024)</div>
+    </div>
+  </div>
+
+  <div class="gallery-item">
+    <div class="img-container">
+      <img src="/images/soccer2.jpg" alt="soccer2" onclick="openLightbox(this.src)">
+    </div>
+    <div class="caption">
+      <div class="description">Best memories on soccer fields</div>
+      <div class="credit">by Qixuan Lin (2020)</div>
+    </div>
+  </div>
+  
+  <div class="gallery-item">
+    <div class="img-container">
+      <img src="/images/soccer1.jpg" alt="soccer" onclick="openLightbox(this.src)">
+    </div>
+    <div class="caption">
+      <div class="description">We are the champion</div>
+      <div class="credit">by Qixuan Lin (2019)</div>
+    </div>
+  </div>
+</div>
+                
+            </div>
+        </div>
+        <div class="post-tags">
+            
+            
+            
+        </div>
+        <!-- <a href="/2025/03/24/gallery/" class="go-post">Read More</a> -->
+    </div>
 
         <div class="page-current">
     
