@@ -413,6 +413,9 @@
     width: 100%;
     z-index: 1001;
 }
+/* #menu.hidden {
+    top: -50px;
+} */
 /*change menu color*/
 #menu.menu-color {
     background: rgb(39, 39, 39);
@@ -905,6 +908,48 @@ ol li {
     }
 }
 @media (max-width: 900px) {
+    /* Change home-posts-wrap to column layout */
+    #home-posts-wrap {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin-top: 50px; /* Space after the menu */
+    }
+    
+    /* Make card visible and ensure it appears first */
+    #home-card {
+        display: block !important;
+        width: 100%;
+        margin-bottom: 30px;
+        order: 1; /* Lower order means it appears first */
+    }
+    
+    /* Style the card to match posts width */
+    #home-card #card-style {
+        position: relative; /* Change from fixed */
+        top: 0;
+        width: 100%;
+        max-width: 100%;
+        background: #ffffffce; /* Match post background */
+        border-radius: 10px;
+        box-shadow: 0 0 20px #d9d9d980; /* Match post shadow */
+        padding: 15px 0;
+        margin: 0 auto 20px;
+    }
+    
+    #home-card #card-div {
+        padding: 15px 30px; /* Match post padding */
+        margin-top: 0;
+        max-height: none;
+        overflow: visible;
+    }
+    
+    /* Make card content width match post content width */
+    #home-card #card-div .description,
+    #home-card #card-div .icon-links,
+    #home-card #card-div .friend-links {
+        width: 100%;
+    }
     #home-head #home-info {
         height: 350px;
         width: 350px;
@@ -939,13 +984,16 @@ ol li {
         position: absolute;
         width: 350px;
     }
+    /* Give the posts section a higher order to appear second */
     #home-posts {
         margin: auto;
         width: 100%;
+        order: 2;
     }
     #home-posts .post {
         margin-bottom: 30px;
         padding: 20px 30px;
+        scroll-margin-top: 70px;
     }
     #home-posts .post .description {
         padding: 20px 0;
@@ -963,58 +1011,47 @@ ol li {
     #home-card {
         display: none;
     }
-    #mobile-menu {
+    #menu #mobile-menu {
         display: flex !important;
-        flex-direction: column;
-        padding: 0 10px;
-    }
-    
-    #mobile-menu .title {
-        display: flex;
-        justify-content: space-between;
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
-        z-index: 1003;
-    }
-    
-    #mobile-menu .title a {
-        color: inherit;
-        display: flex;
-        align-items: center;
-    }
-    
-    #mobile-menu .site-title {
-        font-size: 16px;
-        margin-left: 5px;
-    }
-    
-    #mobile-menu .mobile-menu-row {
-        display: flex;
-        justify-content: space-around;
+        padding: 0;
+        min-height: 50px;
         width: 100%;
-        padding: 5px 0;
-        overflow-x: auto;
     }
     
-    #mobile-menu .mobile-menu-item {
-        color: inherit;
-        padding: 5px 10px;
-        font-size: 16px;
+    #menu #mobile-menu .mobile-menu-row {
+        display: flex;
+        justify-content: space-evenly; /* More even spacing */
+        width: 100%;
+        padding: 0;
     }
     
-    /* Hide the unnecessary elements */
-    #menu-curtain,
-    #mobile-menu .items {
+    #menu #mobile-menu .mobile-menu-item {
+        padding: 10px 10px; /* Larger touch targets */
+        font-size: 12px; /* Larger icons */
+        color: #071128
+    }
+    
+    /* Hide the title/hamburger section */
+    #menu #mobile-menu .title {
+        display: none;
+    }
+    
+    /* Hide the dropdown items section */
+    #menu #mobile-menu .items {
         display: none !important;
     }
+    
+    /* Hide the menu curtain */
+    #menu-curtain {
+        display: none !important;
+    }
+    
+    /* Other mobile styles can remain the same */
     ul,
     ol {
         padding-left: 20px;
-    }
-}
-
-@media (max-width: 400px) {
-    #mobile-menu .mobile-menu-item {
-        padding: 5px 8px;
-        font-size: 14px;
     }
 }

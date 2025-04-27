@@ -62,7 +62,6 @@
             </div>
         </transition>
         <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
-    <!-- Desktop menu - remains unchanged -->
     <nav id="desktop-menu">
         <a class="title" href="/">
             <span>QIXUAN LIN</span>
@@ -93,40 +92,39 @@
         </a>
         
     </nav>
-    
-    <!-- Modified mobile menu to display horizontally -->
     <nav id="mobile-menu">
-        <div class="title">
-            <a href="/">
-                <i class="fa-solid fa-home fa-fw"></i>
-                <span class="site-title">QIXUAN LIN</span>
-            </a>
-        </div>
         <div class="mobile-menu-row">
             
             
             <a href="/#post-main" class="mobile-menu-item">
                 <i class="fa-solid fa- fa-fw"></i>
+                <span class="mobile-menu-text">About Me</span>
             </a>
             
             
             <a href="/#post-research" class="mobile-menu-item">
                 <i class="fa-solid fa- fa-fw"></i>
+                <span class="mobile-menu-text">Research</span>
             </a>
             
             
             <a href="/#post-publications" class="mobile-menu-item">
                 <i class="fa-solid fa- fa-fw"></i>
+                <span class="mobile-menu-text">Publications</span>
             </a>
             
             
             <a href="/#post-gallery" class="mobile-menu-item">
                 <i class="fa-solid fa- fa-fw"></i>
+                <span class="mobile-menu-text">Gallery</span>
             </a>
             
         </div>
     </nav>
 </div>
+<transition name="fade">
+    <div id="menu-curtain" @click="showMenuItems = !showMenuItems" v-show="showMenuItems"></div>
+</transition>
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
             <div class="article">
     <div>
