@@ -60,6 +60,7 @@
             </div>
         </transition>
         <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
+    <!-- Desktop menu - remains unchanged -->
     <nav id="desktop-menu">
         <a class="title" href="/">
             <span>QIXUAN LIN</span>
@@ -90,61 +91,40 @@
         </a>
         
     </nav>
+    
+    <!-- Modified mobile menu to display horizontally -->
     <nav id="mobile-menu">
-        <div class="title" @click="showMenuItems = !showMenuItems">
-            <i class="fa-solid fa-bars fa-fw"></i>
-            <span>&emsp;QIXUAN LIN</span>
+        <div class="title">
+            <a href="/">
+                <i class="fa-solid fa-home fa-fw"></i>
+                <span class="site-title">QIXUAN LIN</span>
+            </a>
         </div>
-        <transition name="slide">
-            <div class="items" v-show="showMenuItems">
-                
-                
-                <a href="/#post-main">
-                    <div class="item">
-                        <div style="min-width: 20px; max-width: 50px; width: 10%">
-                            <i class="fa-solid fa- fa-fw"></i>
-                        </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">About Me</div>
-                    </div>
-                </a>
-                
-                
-                <a href="/#post-research">
-                    <div class="item">
-                        <div style="min-width: 20px; max-width: 50px; width: 10%">
-                            <i class="fa-solid fa- fa-fw"></i>
-                        </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">Research</div>
-                    </div>
-                </a>
-                
-                
-                <a href="/#post-publications">
-                    <div class="item">
-                        <div style="min-width: 20px; max-width: 50px; width: 10%">
-                            <i class="fa-solid fa- fa-fw"></i>
-                        </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">Publications</div>
-                    </div>
-                </a>
-                
-                
-                <a href="/#post-gallery">
-                    <div class="item">
-                        <div style="min-width: 20px; max-width: 50px; width: 10%">
-                            <i class="fa-solid fa- fa-fw"></i>
-                        </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">Gallery</div>
-                    </div>
-                </a>
-                
-            </div>
-        </transition>
+        <div class="mobile-menu-row">
+            
+            
+            <a href="/#post-main" class="mobile-menu-item">
+                <i class="fa-solid fa- fa-fw"></i>
+            </a>
+            
+            
+            <a href="/#post-research" class="mobile-menu-item">
+                <i class="fa-solid fa- fa-fw"></i>
+            </a>
+            
+            
+            <a href="/#post-publications" class="mobile-menu-item">
+                <i class="fa-solid fa- fa-fw"></i>
+            </a>
+            
+            
+            <a href="/#post-gallery" class="mobile-menu-item">
+                <i class="fa-solid fa- fa-fw"></i>
+            </a>
+            
+        </div>
     </nav>
 </div>
-<transition name="fade">
-    <div id="menu-curtain" @click="showMenuItems = !showMenuItems" v-show="showMenuItems"></div>
-</transition>
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
             <div id="home-head">
     <div

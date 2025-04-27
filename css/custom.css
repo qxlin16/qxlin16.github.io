@@ -107,8 +107,5 @@
     font-style: italic;
     color: #6ba6ff;
   }
-  ul + h3 + .split-line {
-    height: 1px; /* Match the height of your other horizontal lines */
-    margin: 1rem 0; /* Match the margins of your other horizontal lines */
-  }
+
 
